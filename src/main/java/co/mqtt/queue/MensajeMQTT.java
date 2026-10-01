@@ -2,7 +2,14 @@ package co.mqtt.queue;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+/*
+Elaborado por:
+DANIEL ESTEBAN BORRE CARO - 0222510016
+LIONNY LIN LI - 0222510050
+MARIA ALEJANDRA RAMOS NAIZIR - 0222510006
 
+--Repo en Github del taller https://github.com/danicpr/Taller5_Colas
+ */
 public class MensajeMQTT {
 
     int id;
@@ -26,7 +33,7 @@ public class MensajeMQTT {
     }
 
     void mostrarMensaje() {
-        System.out.println("ID: " + this.id);
+        System.out.println("ID Mensaje: " + this.id);
         System.out.println("Dispositivo: " + this.dispositivoId);
         System.out.println("Topic: " + this.topic);
         System.out.println("Payload: " + this.payload);
@@ -40,5 +47,9 @@ public class MensajeMQTT {
 
     public int getId() {
         return id;
+    }
+
+    public String getDispositivoId() {
+        return dispositivoId;
     }
 }
